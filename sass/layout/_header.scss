@@ -1,0 +1,104 @@
+.logo {
+    color: #000;
+    font-family: Raleway;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.78px;
+    justify-self: left;
+    text-decoration: none;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .header .container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+    margin-left: 93px;
+  }
+  
+  .nav-item-link {
+    color: var(--main-color);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+    text-decoration: none;
+    justify-content: start;
+    position: relative;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    display: block;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .nav-item-link:hover,
+  .nav-item-link:focus {
+    color: var(--accent-color);
+  }
+  
+  .nav-list {
+    display: flex;
+    gap: 50px;
+    margin-right: auto;
+  }
+  
+  .info-link-item {
+    color: var(--add-bg-color);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .current::after {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: var(--accent-color);
+    position: absolute;
+    bottom: 0px;
+    border-radius: 2px;
+    transition: opacity 250ms
+      cubic-bezier(0.4, 0, 0.2, 1) ;
+  }
+  
+  .current::after:hover ,
+  .current::after:focus {
+    opacity: 0.8;
+  }
+  
+  .info-link-item:hover,
+  .info-link-item:focus {
+    color: var(--accent-color);
+  }
+  
+  .list-info {
+    display: flex;
+    gap: 50px;
+    margin-left: auto;
+  }
+  
+  .info-icon {
+    display: inline-block;
+    fill: var(--add-bg-color);
+    margin-right: 10px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) ; 
+  }
+  
+  .info-link-item:hover .info-icon,
+  .info-link-item:focus .info-icon {
+    fill: var(--accent-color);
+  }
