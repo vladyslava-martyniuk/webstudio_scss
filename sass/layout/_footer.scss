@@ -1,25 +1,15 @@
 .footer {
-    background-color: var(--bg-color);
+    background-color: $bg-color;
     padding-top: 60px;
     padding-bottom: 60px;
+    
   }
   
-  .footer .container {
-    display: flex;
-    gap: 70px;
-  }
-  
-  .logo-footer {
-    color: var(--white-color);
-    margin-bottom: 20px;
-  }
-  
-  .logo-accent {
-    color: var(--accent-color);
-    font-family: Raleway, sans-serif;
-  }
-  
-  .address-item-link {
+    .footer .container {
+      display: flex;
+      gap: 70px;
+    }
+  .address__link {
     padding-bottom: 9px;
     font-style: normal;
     color: rgba(255, 255, 255, 0.6);
@@ -30,16 +20,18 @@
     text-decoration: none;
     gap: 9px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
-  }
-  .address-item-link:hover,  .address-item-link:focus{
-  color: var(--accent-color);
-  }
-  .address-item-link:first-child {
-    color: white;
+    &:hover,
+      &:focus {
+        color: $accent-color;
+      }
   }
   
-  .footer-text {
-    color: var(--white-color);
+  .address__link:first-child {
+    color: $white-color;
+  }
+  
+  .footer__text {
+    color: $white-color;
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 0.42px;
@@ -47,16 +39,16 @@
     margin-bottom: 20px;
   }
   
-  .list-footer-soc-net {
+  .footer-soc-net__list {
     display: flex;
     gap: 10px;
   }
   
-  .footer-icon {
-    fill: var(--white-color);
+  .footer__icon {
+    fill: $white-color;
   }
   
-  .footer-soc-net-link {
+  .footer-soc-net__link {
     display: flex;
     justify-content: center;
     border-radius: 50px;
@@ -65,21 +57,21 @@
     background-color: rgba(255, 255, 255, 0.1);
     align-items: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
+   &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
   }
   
-  .footer-soc-net-link:hover,
-  .footer-soc-link:focus {
-    background-color: var(--accent-color);
-  }
+ 
   
-  .footer-form {
+  .footer__form {
     display: flex;
     gap: 12px;
   }
   
-  .footer-form-text {
-    color: var(--white-color);
+  .footer-div__text {
+    color: $white-color;
     text-transform: uppercase;
     font-size: 16px;
     font-weight: 700;
@@ -88,7 +80,7 @@
     padding-bottom: 20px;
   }
   
-  .footer-form-input {
+  .footer__input {
     color: rgba(255, 255, 255, 0.6);
     font-size: 16px;
     font-weight: 400;
@@ -101,45 +93,11 @@
     width: 358px;
     padding: 15px 0px 15px 16px;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
-  
+  &:hover,
+   & :focus {
+      border: 1px solid $accent-color;
+      outline: none;
   }
-  
-  .footer-form-input:hover,
-  .footer-form-input:focus {
-    border: 1px solid var(--accent-color);
-    outline: none;
   }
+ 
   
-  .footer-form-btn {
-    color: var(--white-color);
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    text-align: center;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 30px;
-    letter-spacing: 0.96px;
-    border-radius: 4px;
-    background: var(--accent-color);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    padding: 10px 28px 10px 28px;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .footer-form-btn::after {
-    content: "";
-    display: inline-block;
-    height: 24px;
-    width: 24px;
-    background-image: url(../images/icon-send.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  .footer-form-btn:hover,
-  .footer-form-btn:focus {
-    cursor: pointer;
-    opacity: 0.5;
-  }
