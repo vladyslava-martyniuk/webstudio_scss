@@ -1,6 +1,5 @@
 .logo {
     color: #000;
-    font-family: Raleway;
     font-size: 26px;
     font-weight: 700;
     letter-spacing: 0.78px;
@@ -10,6 +9,7 @@
  .footer__logo {
      color: $white-color;
      margin-bottom: 20px;
+     display: block;
  }
 
  .logo__accent {

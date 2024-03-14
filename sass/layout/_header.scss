@@ -5,8 +5,7 @@
     justify-content: space-around;
     align-items: center;
   }
-  
-  .header .container {
+    .header__container{
     display: flex;
     align-items: center;
   }
@@ -22,6 +21,7 @@
        display: flex;
        gap: 50px;
        margin-right: auto;
+       padding-right: 444px;
      }
 
   .nav__link {
@@ -36,12 +36,13 @@
     padding-bottom: 25px;
     display: block;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+      &:focus {
+        color: $accent-color;
+      }
   }
   
-  .nav__link:hover,
-  .nav__link:focus {
-    color: $accent-color;
-  }
+ 
   
  
      .nav__link--current::after {
@@ -54,30 +55,31 @@
       bottom: 0px;
       border-radius: 2px;
       transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      &:hover,
-        &:focus {
-          opacity: 0.8;
-        }
+     
     }
       
-  .list__info {
+        .nav__link--current:hover::after,
+        .nav__link--current:focus::after {
+           opacity: 0.8;
+         }
+  .info-list {
     display: flex;
     gap: 50px;
     margin-left: auto;
   }
   
-  .info__icon {
+  .info-list__icon {
     display: inline-block;
     fill: $add-bg-color;
     margin-right: 10px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) ; 
    
   }
-         .info__link:hover .info__icon,
-        .info__link :focus .info__icon {
+         .info-list__link:hover .info-list__icon,
+        .info-list__link :focus .info-list__icon {
        fill: $accent-color;
      }
-    .info__link {
+    .info-list__link {
       color: $add-bg-color;
       font-size: 14px;
       font-weight: 500;

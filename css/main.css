@@ -1,7 +1,6 @@
 @charset "UTF-8";
 .logo {
   color: #000;
-  font-family: Raleway;
   font-size: 26px;
   font-weight: 700;
   letter-spacing: 0.78px;
@@ -12,6 +11,7 @@
 .footer__logo {
   color: #fff;
   margin-bottom: 20px;
+  display: block;
 }
 
 .logo__accent {
@@ -27,12 +27,12 @@
   font-weight: 700;
   line-height: 30px;
   letter-spacing: 0.96px;
-  background-color: #2196f3;
+  border-radius: 4px;
+  background: #2196f3;
   display: block;
   margin: 0 auto;
   border: none;
   padding: 10px 32px;
-  border-radius: 4px;
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -42,22 +42,21 @@
 }
 
 .footer__btn {
-  color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 10px;
+  color: #fff;
   text-align: center;
   font-size: 16px;
-  font-style: normal;
   font-weight: 700;
   line-height: 30px;
   letter-spacing: 0.96px;
   border-radius: 4px;
   background: #2196f3;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   padding: 10px 28px 10px 28px;
@@ -80,25 +79,38 @@
 }
 
 .modal__btn {
+  display: block;
+  margin: 0 auto;
+  border: transparent;
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  padding: 10px 52px;
+  margin-top: 30px;
   color: #fff;
+}
+.modal__btn:hover, .modal__btn:focus {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.btn {
   text-align: center;
   font-size: 16px;
   font-weight: 700;
   line-height: 30px;
   letter-spacing: 0.96px;
-  display: block;
-  margin: 0 auto;
-  border: transparent;
   border-radius: 4px;
   background: #2196f3;
-  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  padding: 10px 52px;
-  margin-top: 30px;
 }
-.modal__btn:hover, .modal__btn:focus {
-  cursor: pointer;
-  opacity: 0.5;
+
+.btn {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.96px;
+  border-radius: 4px;
+  background: #2196f3;
 }
 
 body {
@@ -166,7 +178,7 @@ img {
           align-items: center;
 }
 
-.header .container {
+.header__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -188,6 +200,7 @@ img {
   display: flex;
   gap: 50px;
   margin-right: auto;
+  padding-right: 444px;
 }
 
 .nav__link {
@@ -206,9 +219,7 @@ img {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.nav__link:hover,
-.nav__link:focus {
+.nav__link:hover, .nav__link:focus {
   color: #2196f3;
 }
 
@@ -224,11 +235,13 @@ img {
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.nav__link--current::after:hover, .nav__link--current::after:focus {
+
+.nav__link--current:hover::after,
+.nav__link--current:focus::after {
   opacity: 0.8;
 }
 
-.list__info {
+.info-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -236,7 +249,7 @@ img {
   margin-left: auto;
 }
 
-.info__icon {
+.info-list__icon {
   display: inline-block;
   fill: #757575;
   margin-right: 10px;
@@ -244,12 +257,12 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.info__link:hover .info__icon,
-.info__link :focus .info__icon {
+.info-list__link:hover .info-list__icon,
+.info-list__link :focus .info-list__icon {
   fill: #2196f3;
 }
 
-.info__link {
+.info-list__link {
   color: #757575;
   font-size: 14px;
   font-weight: 500;
@@ -264,7 +277,7 @@ img {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.info__link:hover, .info__link:focus {
+.info-list__link:hover, .info-list__link:focus {
   color: #2196f3;
 }
 
@@ -311,7 +324,8 @@ img {
   letter-spacing: 0.42px;
   text-transform: uppercase;
 }
-.advantages__subtitle .text {
+
+.advantages__text {
   color: #212121;
   font-size: 14px;
   font-weight: 400;
@@ -481,12 +495,12 @@ img {
   background-color: #2196f3;
 }
 
-.workers-soc-net__link:hover .workers__icon,
-.workers-soc-net__link:focus .workers__icon {
+.workers-soc-net__link:hover .workers-soc-net__icon,
+.workers-soc-net__link:focus .workers-soc-net__icon {
   fill: #fff;
 }
 
-.workers__icon {
+.workers-soc-net__icon {
   fill: #afb1b8;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -599,7 +613,7 @@ img {
   gap: 10px;
 }
 
-.footer__icon {
+.footer-soc-net__icon {
   fill: #fff;
 }
 
@@ -706,7 +720,7 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn {
+.modal__btn-close {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50px;
   background-color: transparent;
@@ -724,16 +738,16 @@ img {
           align-items: center;
   padding: 6px 6px 6px 6px;
 }
-.btn:hover, .btn:focus {
+.modal__btn-close:hover, .modal__btn-close:focus {
   cursor: pointer;
 }
 
-.btn:hover .modal-icon,
-.btn:focus .modal-icon {
+.modal__btn-close:hover .modal-icon,
+.modal__btn-close:focus .modal-icon {
   fill: #2196f3;
 }
 
-.modal__text {
+.modal__title {
   color: #212121;
   text-align: center;
   font-size: 20px;
@@ -818,7 +832,7 @@ img {
           justify-content: center;
 }
 
-.modal-checkbox__text {
+.modal__text-rules {
   padding-top: -5px;
 }
 
@@ -918,7 +932,7 @@ img {
   transition: transform 250ms ease, -webkit-transform 250ms ease;
 }
 
-.overley__text {
+.projects__overley-text {
   color: #fff;
   font-size: 18px;
   font-weight: 400;
@@ -927,7 +941,7 @@ img {
   padding: 63px 24px;
 }
 
-.wrapper__image {
+.projects__wrapper-image {
   overflow: hidden;
   position: relative;
 }
@@ -938,7 +952,7 @@ img {
           transform: translateY(0);
 }
 
-.projects__wrapper {
+.projects__wrapper-info {
   background-color: #fff;
   padding: 20px 24px;
 }

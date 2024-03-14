@@ -33,7 +33,7 @@
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
-    .btn {
+    .modal__btn-close {
       border: 1px solid rgba(0, 0, 0, 0.1);
       border-radius: 50px;
       background-color: transparent;
@@ -53,12 +53,12 @@
   
   
   
-  .btn:hover .modal-icon,
-  .btn:focus .modal-icon {
+  .modal__btn-close:hover .modal-icon,
+  .modal__btn-close:focus .modal-icon {
     fill: $accent-color;
   }
   
-  .modal__text {
+  .modal__title {
     color: $main-color;
     text-align: center;
     font-size: 20px;
@@ -137,7 +137,7 @@
     justify-content: center;
   }
   
-  .modal-checkbox__text {
+  .modal__text-rules {
     padding-top: -5px;
   }
   

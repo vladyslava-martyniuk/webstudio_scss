@@ -72,7 +72,7 @@
     transition: transform 250ms ease;
   }
   
-  .overley__text {
+  .projects__overley-text {
     color: $white-color;
     font-size: 18px;
     font-weight: 400;
@@ -83,7 +83,7 @@
   
  
   
-  .wrapper__image {
+  .projects__wrapper-image {
     overflow: hidden;
     position: relative;
   }
@@ -92,7 +92,7 @@
     transform: translateY(0);
   }
   
-  .projects__wrapper {
+  .projects__wrapper-info {
     background-color: $white-color;
     padding: 20px 24px;
   }

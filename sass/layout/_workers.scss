@@ -73,12 +73,12 @@
   
  
   
-  .workers-soc-net__link:hover .workers__icon,
-  .workers-soc-net__link:focus .workers__icon {
+  .workers-soc-net__link:hover .workers-soc-net__icon,
+  .workers-soc-net__link:focus .workers-soc-net__icon {
     fill: $white-color;
   }
   
-  .workers__icon {
+  .workers-soc-net__icon {
     fill: #afb1b8;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
