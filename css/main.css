@@ -1,5 +1,6 @@
 @charset "UTF-8";
 .logo {
+  font-family: Raleway, sans-serif;
   color: #000;
   font-size: 26px;
   font-weight: 700;
@@ -16,56 +17,23 @@
 
 .logo__accent {
   color: #2196f3;
-  font-family: Raleway, sans-serif;
 }
 
 .hero__btn {
-  font-family: inherit;
-  color: #fff;
-  text-align: center;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 30px;
-  letter-spacing: 0.96px;
-  border-radius: 4px;
-  background: #2196f3;
   display: block;
   margin: 0 auto;
   border: none;
   padding: 10px 32px;
-  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.hero__btn:hover, .hero__btn:focus {
-  cursor: pointer;
-  opacity: 0.8;
 }
 
 .footer__btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: #fff;
-  text-align: center;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 30px;
-  letter-spacing: 0.96px;
-  border-radius: 4px;
-  background: #2196f3;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   gap: 10px;
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   padding: 10px 28px 10px 28px;
-  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.footer__btn:hover, .footer__btn:focus {
-  cursor: pointer;
-  opacity: 0.5;
 }
 
 .footer__btn::after {
@@ -86,31 +54,24 @@
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   padding: 10px 52px;
   margin-top: 30px;
+}
+
+.btn {
+  font-family: inherit;
   color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.96px;
+  border-radius: 4px;
+  background: #2196f3;
+  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal__btn:hover, .modal__btn:focus {
+.btn:hover, .btn:focus {
   cursor: pointer;
-  opacity: 0.5;
-}
-
-.btn {
-  text-align: center;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 30px;
-  letter-spacing: 0.96px;
-  border-radius: 4px;
-  background: #2196f3;
-}
-
-.btn {
-  text-align: center;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 30px;
-  letter-spacing: 0.96px;
-  border-radius: 4px;
-  background: #2196f3;
+  opacity: 0.8;
 }
 
 body {
@@ -256,9 +217,7 @@ img {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.info-list__link:hover .info-list__icon,
-.info-list__link :focus .info-list__icon {
+.info-list__link:hover .info-list__icon, .info-list__link :focus .info-list__icon {
   fill: #2196f3;
 }
 
@@ -460,7 +419,7 @@ img {
   letter-spacing: 0.48px;
 }
 
-.workers-soc-net__list {
+.workers-soc-net.list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -495,15 +454,13 @@ img {
   background-color: #2196f3;
 }
 
-.workers-soc-net__link:hover .workers-soc-net__icon,
-.workers-soc-net__link:focus .workers-soc-net__icon {
-  fill: #fff;
-}
-
 .workers-soc-net__icon {
   fill: #afb1b8;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.workers-soc-net__link:hover .workers-soc-net__icon, .workers-soc-net__link:focus .workers-soc-net__icon {
+  fill: #fff;
 }
 
 .clients {
@@ -552,15 +509,13 @@ img {
   border: 1px solid #2196f3;
 }
 
-.clients__link:hover .clients__icon,
-.clients__link:focus .clients__icon {
-  fill: #2196f3;
-}
-
 .clients__icon {
   fill: #afb1b8;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.clients__link:hover .clients__icon, .clients__link:focus .clients__icon {
+  fill: #2196f3;
 }
 
 .footer {
@@ -606,7 +561,7 @@ img {
   margin-bottom: 20px;
 }
 
-.footer-soc-net__list {
+.footer-soc-net.list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -878,7 +833,7 @@ img {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.filters__btn:hover {
+.filters__btn:hover, .filters__btn:focus {
   background-color: #2196f3;
   color: #fff;
   -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);

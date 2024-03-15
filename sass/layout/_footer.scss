@@ -39,11 +39,10 @@
     margin-bottom: 20px;
   }
   
-  .footer-soc-net__list {
+  .footer-soc-net.list{
     display: flex;
     gap: 10px;
   }
-  
     .footer-soc-net__icon {
     fill: $white-color;
   }
