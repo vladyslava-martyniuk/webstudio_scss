@@ -27,7 +27,7 @@
 }
 
 .advantages__item {
-  flex-basis: calc((100% - 90px) / 4);
+@include flex-basis(30px, 4);
   &::before {
     content: "";
     display: block;
@@ -39,15 +39,9 @@
     background-position: center;
   }
 }
-
-.advantages__item:nth-child(2)::before {
-  background-image: url(../images/advantages_svg2.svg);
+@for $i from 1 through 4 {
+  .advantages__item:nth-child(#{$i})::before {
+      background-image: url(../images/advantages_svg#{$i}.svg);
+  }
 }
 
-.advantages__item:nth-child(3)::before {
-  background-image: url(../images/advantages_svg3.svg);
-}
-
-.advantages__item:nth-child(4)::before {
-  background-image: url(../images/advantages_svg4.svg);
-}

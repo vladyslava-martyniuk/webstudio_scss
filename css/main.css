@@ -1,4 +1,12 @@
 @charset "UTF-8";
+.clients__title, .workers__title, .performance__title {
+  color: #212121;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 1.08px;
+}
+
 .logo {
   font-family: Raleway, sans-serif;
   color: #000;
@@ -293,10 +301,6 @@ img {
   display: block;
 }
 
-.advantages__item {
-  -ms-flex-preferred-size: calc((100% - 90px) / 4);
-      flex-basis: calc((100% - 90px) / 4);
-}
 .advantages__item::before {
   content: "";
   display: block;
@@ -306,6 +310,10 @@ img {
   background-image: url(../images/advantages_svg1.svg);
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.advantages__item:nth-child(1)::before {
+  background-image: url(../images/advantages_svg1.svg);
 }
 
 .advantages__item:nth-child(2)::before {
@@ -329,11 +337,6 @@ img {
 }
 
 .performance__title {
-  color: #212121;
-  text-align: center;
-  font-size: 36px;
-  font-weight: 700;
-  letter-spacing: 1.08px;
   padding: 50px;
 }
 
@@ -394,11 +397,6 @@ img {
 
 .workers__title {
   margin-bottom: 50px;
-  color: #212121;
-  text-align: center;
-  font-size: 36px;
-  font-weight: 700;
-  letter-spacing: 1.08px;
 }
 
 .workers__subtitle {
@@ -466,14 +464,6 @@ img {
 .clients {
   padding-top: 94px;
   padding-bottom: 94px;
-}
-
-.clients__title {
-  color: #212121;
-  text-align: center;
-  font-size: 36px;
-  font-weight: 700;
-  letter-spacing: 1.08px;
 }
 
 .clients__list {

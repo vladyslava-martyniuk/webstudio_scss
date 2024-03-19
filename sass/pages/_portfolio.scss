@@ -1,115 +1,110 @@
 .projects {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-  
-  .filters__list {
-    margin-bottom: 50px;
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-  }
-  
-  .filters__btn {
-    min-width: 73px;
-    padding: 6px 22px;
-    color: $main-color;
-    text-align: center;
-    font-family: Roboto;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 26px;
-    letter-spacing: 0.48px;
-    border-radius: 4px;
-    border: none;
-    cursor: pointer;
-    transition-property: background-color, box-shadow, color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,&:focus {
-        background-color: $accent-color;
-        color: $white-color;
-        box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
-          0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-      }
-  }
-  
- 
-  
-  .projects__list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-  }
-  
-  .projects__item {
-    flex-basis: calc((100% - 60px) / 3);
-    border: 1px solid #eee;
-  
-  }
-  
-  .projects__link {
-    display: block;
-    transition-property:box-shadow ;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-      &:hover,
-        &:focus {
-          box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
-            0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-        }
-    }
-  
-  
-  .projects__overley {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(33, 150, 243, 0.9);
-    transform: translateY(100%);
-    transition: transform 250ms ease;
-  }
-  
-  .projects__overley-text {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.filters__list {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.filters__btn {
+  min-width: 73px;
+  padding: 6px 22px;
+  color: $main-color;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0.48px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition-property: background-color, box-shadow, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
     color: $white-color;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 28px;
-    letter-spacing: 0.54px;
-    padding: 63px 24px;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   }
-  
- 
-  
-  .projects__wrapper-image {
-    overflow: hidden;
-    position: relative;
+}
+
+.projects__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.projects__item {
+  @include flex-basis(20px, 3);
+  border: 1px solid #eee;
+}
+
+.projects__link {
+  display: block;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+      0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
   }
-  
-  .projects__item:hover .projects__overley {
-    transform: translateY(0);
-  }
-  
-  .projects__wrapper-info {
-    background-color: $white-color;
-    padding: 20px 24px;
-  }
-  
-  .projects__subtitle {
-    margin-bottom: 4px;
-    color: $main-color;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 36px;
-    letter-spacing: 1.08px;
-  }
-  
-  .projects__text {
-    color: $add-bg-color;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 30px;
-    letter-spacing: 0.48px;
-  }
+}
+
+.projects__overley {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+  transition: transform 250ms ease;
+}
+
+.projects__overley-text {
+  color: $white-color;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.54px;
+  padding: 63px 24px;
+}
+
+.projects__wrapper-image {
+  overflow: hidden;
+  position: relative;
+}
+
+.projects__item:hover .projects__overley {
+  transform: translateY(0);
+}
+
+.projects__wrapper-info {
+  background-color: $white-color;
+  padding: 20px 24px;
+}
+
+.projects__subtitle {
+  margin-bottom: 4px;
+  color: $main-color;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 1.08px;
+}
+
+.projects__text {
+  color: $add-bg-color;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.48px;
+}
