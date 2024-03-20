@@ -13,7 +13,8 @@
     padding-bottom: 9px;
     font-style: normal;
     color: rgba(255, 255, 255, 0.6);
-    @include link(400, 0.42px );
+  font-weight: 400;
+  letter-spacing: 0.42;
     font-size: 14px;
     line-height: 24px;
     text-decoration: none;
@@ -47,8 +48,7 @@
   }
   
   .footer-soc-net__link {
-    display: flex;
-    justify-content: center;
+    @include flex( flex, center);
     border-radius: 50px;
     width: 44px;
     height: 44px;

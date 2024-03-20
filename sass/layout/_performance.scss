@@ -10,9 +10,8 @@
   }
   
   .performance__list {
-    display: flex;
+ @include flex(flex, center);
     gap: 30px;
-    justify-content: center;
   }
   
   .performance__item {

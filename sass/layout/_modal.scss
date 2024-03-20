@@ -37,8 +37,7 @@
       border: 1px solid rgba(0, 0, 0, 0.1);
       border-radius: 50px;
       background-color: transparent;
-      justify-content: center;
-      display: flex;
+      @include flex(flex, center);
       position: absolute;
       top: 8px;
       right: 8px;
@@ -131,10 +130,9 @@
   }
   
   .modal__checkbox {
-    display: inline-flex;
+   @include flex(inline-flex, center);
     gap: 5px;
     margin-top: 20px;
-    justify-content: center;
   }
   
   .modal__text-rules {

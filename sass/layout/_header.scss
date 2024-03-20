@@ -24,14 +24,14 @@
 
 .nav__link {
   color: $main-color;
-  @include link(500, 0.28px);
+  font-weight: 500;
+  letter-spacing: 0.28;
   font-size: 14px;
   text-decoration: none;
-  justify-content: start;
+  @include flex( block,start);
   position: relative;
   padding-top: 24px;
   padding-bottom: 25px;
-  display: block;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
