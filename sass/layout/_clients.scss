@@ -20,7 +20,8 @@
     align-items: center;
     border-radius: 4px;
     border: 1px solid #afb1b8;
-    @include flex(flex, center);
+    @include flex( center);
+    display: flex;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
      & :focus {

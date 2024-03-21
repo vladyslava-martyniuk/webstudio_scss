@@ -48,7 +48,8 @@
   }
   
   .footer-soc-net__link {
-    @include flex( flex, center);
+    @include flex( center);
+    display: flex;
     border-radius: 50px;
     width: 44px;
     height: 44px;
