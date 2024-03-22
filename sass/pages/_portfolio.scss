@@ -5,8 +5,7 @@
 
 .filters__list {
   margin-bottom: 50px;
-  display: flex;
-  justify-content: center;
+  @include flex(center);
   gap: 8px;
 }
 

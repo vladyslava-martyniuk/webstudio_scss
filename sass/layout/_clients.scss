@@ -8,7 +8,7 @@
   }
   
   .clients__list {
-   @include flex(flex, space-around);
+   @include flex( space-around);
     align-items: center;
     padding-top: 50px;
   }

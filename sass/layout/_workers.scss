@@ -44,13 +44,13 @@
   }
   
   .workers-soc-net.list{
-    @include flex(flex, center);
+    @include flex( center);
     margin-top: 28px;
     gap: 12px;
   }
   
   .workers-soc-net__link {
-    @include flex(flex, center);
+    @include flex( center);
 
     width: 44px;
     height: 44px;
