@@ -1,6 +1,5 @@
 .header {
-  display: flex;
-  @include flex( space-around);
+  @include flex(flex, space-around);
   align-items: center;
 }
 .header__container {
@@ -28,7 +27,8 @@
   letter-spacing: 0.28;
   font-size: 14px;
   text-decoration: none;
-  @include flex( start);
+
+  justify-content: start;
   display: block;
   position: relative;
   padding-top: 24px;

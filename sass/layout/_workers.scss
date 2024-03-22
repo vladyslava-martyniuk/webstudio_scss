@@ -50,8 +50,8 @@
   }
   
   .workers-soc-net__link {
-    @include flex( center);
-    display: flex;
+    @include flex(flex, center);
+
     width: 44px;
     height: 44px;
     align-items: center;

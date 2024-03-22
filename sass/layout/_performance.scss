@@ -10,8 +10,7 @@
   }
   
   .performance__list {
- @include flex( center);
- display: flex;
+ @include flex(flex, center);
     gap: 30px;
   }
   
