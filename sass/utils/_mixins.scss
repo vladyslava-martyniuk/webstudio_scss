@@ -2,7 +2,7 @@
     flex-basis: calc((100% - $gap * (#{$count-items} - 1)) / #{$count-items});
     }
     
-    @mixin flex( $display, $justify-content ){
+    @mixin flex(  $justify-content ){
       display: flex;
       justify-content: $justify-content;
         }
