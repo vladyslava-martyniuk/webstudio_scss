@@ -1,12 +1,14 @@
 .advantages {
   padding-top: 94px;
   padding-bottom: 94px;
-  .list {
+  
+  }
+  .advantages__list {
     display: flex;
     gap: 30px;
     align-items: flex-start;
+   
   }
-}
 
 .advantages__subtitle {
   margin-bottom: 10px;
@@ -33,11 +35,13 @@
     display: block;
     background-color: $add-color;
     height: 120px;
+   width: 270px;
     border-radius: 4px;
     background-image: url(../images/advantages_svg1.svg);
     background-repeat: no-repeat;
     background-position: center;
   }
+     
 }
 @for $i from 1 through 4 {
   .advantages__item:nth-child(#{$i})::before {

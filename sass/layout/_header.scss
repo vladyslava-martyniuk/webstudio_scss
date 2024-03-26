@@ -1,7 +1,17 @@
 .header {
-  @include flex(flex, space-around);
+  @include flex(space-around);
   align-items: center;
+padding: 24px, 0;
+  @media screen and (width:480px) {
+      padding: 16px, 0;
+    }
+  
+    @media screen and (width:768px) {
+    padding: 26px, 0;
+    }
 }
+
+
 .header__container {
   display: flex;
   align-items: center;
@@ -19,6 +29,13 @@
   gap: 50px;
   margin-right: auto;
   padding-right: 444px;
+  @media screen and (width:480px) {
+      display: none;
+    }
+  
+    @media screen and (width:768px) {
+      display: flex;
+    }
 }
 
 .nav__link {
@@ -56,9 +73,15 @@
   opacity: 0.8;
 }
 .info-list {
-  display: flex;
+  display: inline-flex;
   gap: 50px;
   margin-left: auto;
+  @media screen and (min-width:480px){
+    display: none;
+    }
+    @media screen and (min-width:768px){
+   display: flex;
+    }
 }
 
 .info-list__icon {
@@ -85,4 +108,15 @@
   &:focus {
     color: $accent-color;
   }
+}
+.btn-menu {
+  display: none;
+  margin-left: 270px;
+  @media screen and (min-width: 480px) {
+  display: inline-block;
+}
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  } 
 }

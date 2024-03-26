@@ -12,6 +12,7 @@
   .performance__list {
  @include flex( center);
     gap: 30px;
+    
   }
   
   .performance__item {
