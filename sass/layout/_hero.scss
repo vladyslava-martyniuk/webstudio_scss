@@ -6,15 +6,6 @@
   background-repeat: no-repeat;
   padding-top: 200px;
   padding-bottom: 200px;
-  @media screen and (min-width: 480px) {
-      padding-top: 116px;
-        padding-bottom: 116px;
-    }
-  
-    @media screen and (min-width: 768px) {
-    padding-top: 118px;
-      padding-bottom: 118px;
-    }
 }
 
  
@@ -27,7 +18,8 @@
     line-height: 60px;
     letter-spacing: 2.64px;
     text-transform: uppercase;
+      }
     
-  }
+    
   
   

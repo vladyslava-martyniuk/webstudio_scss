@@ -1,14 +1,26 @@
 .advantages {
   padding-top: 94px;
   padding-bottom: 94px;
+
+
   
-  }
+}
   .advantages__list {
     display: flex;
     gap: 30px;
     align-items: flex-start;
-   
-  }
+  @media screen and (min-width: 480px) {
+     display: block;
+     flex-direction: row;
+    }
+  
+    @media screen and (min-width: 768px) {
+     display: flex;
+     flex-wrap: wrap;
+    }
+}
+
+
 
 .advantages__subtitle {
   margin-bottom: 10px;

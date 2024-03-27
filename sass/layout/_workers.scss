@@ -2,14 +2,15 @@
   background-color: $add-color;
   padding-top: 94px;
   padding-bottom: 94px;
+  
+  
+   
 }
 
 .workers__list {
-  @include flex( center);
-
+@include flex(center);
     gap: 30px;
-   
-    
+
       
   }
 

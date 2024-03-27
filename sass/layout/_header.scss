@@ -1,11 +1,10 @@
 .header {
   @include flex(space-around);
   align-items: center;
-padding: 24px, 0;
-  @media screen and (width:480px) {
-      padding: 16px, 0;
+ padding: 16px, 0;
+  @media screen and (width:1200px) {
+      padding: 24px, 0;
     }
-  
     @media screen and (width:768px) {
     padding: 26px, 0;
     }
@@ -73,14 +72,14 @@ padding: 24px, 0;
   opacity: 0.8;
 }
 .info-list {
-  display: inline-flex;
+  display: flex;
   gap: 50px;
   margin-left: auto;
-  @media screen and (min-width:480px){
+  @media screen and (min-width: 480px){
     display: none;
     }
     @media screen and (min-width:768px){
-   display: flex;
+   display: flex; 
     }
 }
 
