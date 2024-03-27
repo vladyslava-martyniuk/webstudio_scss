@@ -1,7 +1,10 @@
 .advantages {
   padding-top: 94px;
   padding-bottom: 94px;
-
+@media screen and (min-width: 480px)and (min-width: 768px) {
+  padding-top: 60px;
+    padding-bottom: 60px;
+  }
 
   
 }
@@ -13,7 +16,6 @@
      display: block;
      flex-direction: row;
     }
-  
     @media screen and (min-width: 768px) {
      display: flex;
      flex-wrap: wrap;
@@ -30,6 +32,7 @@
   font-weight: 700;
   letter-spacing: 0.42px;
   text-transform: uppercase;
+  
   }
 .advantages__text {
   color: $main-color;
@@ -42,12 +45,13 @@
 
 .advantages__item {
 @include flex-basis(30px, 4);
+
   &::before {
     content: "";
     display: block;
     background-color: $add-color;
     height: 120px;
-   width: 270px;
+   
     border-radius: 4px;
     background-image: url(../images/advantages_svg1.svg);
     background-repeat: no-repeat;

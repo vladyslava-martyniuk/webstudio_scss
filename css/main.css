@@ -345,6 +345,12 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+@media screen and (min-width: 480px) and (min-width: 768px) {
+  .advantages {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
 
 .advantages__list {
   display: -webkit-box;
@@ -402,7 +408,6 @@ img {
   display: block;
   background-color: #f5f4fa;
   height: 120px;
-  width: 270px;
   border-radius: 4px;
   background-image: url(../images/advantages_svg1.svg);
   background-repeat: no-repeat;
@@ -562,6 +567,12 @@ img {
 .clients {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+@media screen and (min-width: 480px) and (min-width: 768px) {
+  .clients {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .clients__list {
@@ -954,6 +965,15 @@ img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 30px;
+}
+@media screen and (min-width: 480px) {
+  .projects__list {
+    display: block;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .projects__item {
