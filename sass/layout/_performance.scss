@@ -1,8 +1,11 @@
 .performance {
-    padding-top: 0px;
-    padding-bottom: 94px;
-    justify-content: center;
-    
+   display: none;
+  @media screen and (min-width:1200px) {
+      padding-top: 0px;
+        padding-bottom: 94px;
+        justify-content: center;
+        display: flex;
+    }
   }
   
   .performance__title {

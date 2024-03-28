@@ -1,13 +1,16 @@
 .header {
   @include flex(space-around);
   align-items: center;
- padding: 16px, 0;
-  @media screen and (width:1200px) {
-      padding: 24px, 0;
+ padding-top: 16px;
+ padding-bottom: 16px;
+  @media screen and (min-width:768px) {
+      padding-top: 0px;
+        padding-bottom: 0px;
     }
-    @media screen and (width:768px) {
-    padding: 26px, 0;
-    }
+        @media screen and (min-width:1200px) {
+          padding-top: 0px;
+          padding-bottom: 0px;
+        }
 }
 
 
@@ -24,17 +27,21 @@
 }
 
 .nav__list {
-  display: flex;
+  display: none;
   gap: 50px;
   margin-right: auto;
-  padding-right: 444px;
-  @media screen and (width:480px) {
-      display: none;
+  padding-right: 0px;
+   @media screen and (min-width:1200px) {
+      display: flex;
+      padding-right: 315px;
+    }
+    @media screen and (min-width:768px) {
+      display: flex;
+      padding-right: 96px;
+      
     }
   
-    @media screen and (width:768px) {
-      display: flex;
-    }
+   
 }
 
 .nav__link {
@@ -72,15 +79,17 @@
   opacity: 0.8;
 }
 .info-list {
-  display: flex;
+  display: none;
   gap: 50px;
   margin-left: auto;
-  @media screen and (min-width: 480px){
-    display: none;
+  @media screen and (min-width:768px) {
+      display: inline-block;
     }
-    @media screen and (min-width:768px){
-   display: flex; 
+  
+    @media screen and (min-width:1200px) {
+      display: flex;
     }
+    
 }
 
 .info-list__icon {
@@ -109,13 +118,13 @@
   }
 }
 .btn-menu {
-  display: none;
-  margin-left: 270px;
-  @media screen and (min-width: 480px) {
   display: inline-block;
+  margin-left: 270px;
+  @media screen and (min-width: 768px) {
+  display: none;
 }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     display: none;
   } 
 }
