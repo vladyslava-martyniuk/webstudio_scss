@@ -12,6 +12,7 @@
 .header__container {
   display: flex;
   align-items: center;
+   justify-content: space-between;
 }
 
 .nav {
@@ -76,7 +77,11 @@
     display: flex;
   }
 }
-
+@media screen and (max-width: 1199px) {
+  .info-list__item:first-child {
+    margin-bottom: 10px;
+  }
+}
 .info-list__icon {
   display: inline-block;
   fill: $add-bg-color;
@@ -104,7 +109,7 @@
 }
 .btn-menu {
   display: inline-block;
-  margin-left: 270px;
+
   @media screen and (min-width: 768px) {
     display: none;
   }

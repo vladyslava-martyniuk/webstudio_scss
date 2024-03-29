@@ -39,7 +39,7 @@
 }
 
 .advantages__item {
-  @include flex-basis(30px, 4);
+
   &::before {
     content: "";
     display: block;
@@ -51,6 +51,13 @@
     background-repeat: no-repeat;
     background-position: center;
   }
+    @media screen and (min-width: 768px) {
+      @include flex-basis(30px, 2);
+    }
+  
+    @media screen and (min-width: 1200px) {
+    @include flex-basis(30px, 4);
+    }
 }
 @for $i from 1 through 4 {
   .advantages__item:nth-child(#{$i})::before {
