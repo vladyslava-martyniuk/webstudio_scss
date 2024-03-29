@@ -7,10 +7,7 @@
       padding-top: 0px;
         padding-bottom: 0px;
     }
-        @media screen and (min-width:1200px) {
-          padding-top: 0px;
-          padding-bottom: 0px;
-        }
+       
 }
 
 
@@ -30,14 +27,9 @@
   display: none;
   gap: 50px;
   margin-right: auto;
-  padding-right: 0px;
-   @media screen and (min-width:1200px) {
-      display: flex;
-      padding-right: 315px;
-    }
     @media screen and (min-width:768px) {
       display: flex;
-      padding-right: 96px;
+      
       
     }
   
@@ -124,7 +116,5 @@
   display: none;
 }
 
-  @media screen and (min-width: 1200px) {
-    display: none;
-  } 
+ 
 }

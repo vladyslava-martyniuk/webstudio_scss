@@ -10,13 +10,12 @@
 }
   .advantages__list {
     display: block;
-     flex-direction: row;
   @media screen and (min-width: 768px) {
     display: flex;
       flex-wrap: wrap;
+      gap: 30px;
     }
     @media screen and (min-width: 1200px) {
-     display: flex;
     gap: 30px;
     align-items: flex-start;
     }
@@ -32,7 +31,7 @@
   font-weight: 700;
   letter-spacing: 0.42px;
   text-transform: uppercase;
-  
+  text-align: center;
   }
 .advantages__text {
   color: $main-color;
@@ -44,7 +43,7 @@
 }
 
 .advantages__item {
-
+@include flex-basis(30px, 4);
   &::before {
     content: "";
     display: block;

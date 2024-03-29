@@ -147,20 +147,23 @@ img {
 }
 
 .container {
-  padding: 0 20px;
+  padding: 0 15px;
   margin: 0 auto;
-  width: 320px;
+  min-width: 320px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
 }
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
-    padding: 0 15px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
-    padding: 0 15px;
   }
 }
 
@@ -177,12 +180,6 @@ img {
   padding-bottom: 16px;
 }
 @media screen and (min-width: 768px) {
-  .header {
-    padding-top: 0px;
-    padding-bottom: 0px;
-  }
-}
-@media screen and (min-width: 1200px) {
   .header {
     padding-top: 0px;
     padding-bottom: 0px;
@@ -209,22 +206,12 @@ img {
   display: none;
   gap: 50px;
   margin-right: auto;
-  padding-right: 0px;
-}
-@media screen and (min-width: 1200px) {
-  .nav__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding-right: 315px;
-  }
 }
 @media screen and (min-width: 768px) {
   .nav__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding-right: 96px;
   }
 }
 
@@ -323,11 +310,6 @@ img {
     display: none;
   }
 }
-@media screen and (min-width: 1200px) {
-  .btn-menu {
-    display: none;
-  }
-}
 
 .hero {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/bg_hero_webstudio.jpg);
@@ -373,10 +355,6 @@ img {
 
 .advantages__list {
   display: block;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
 }
 @media screen and (min-width: 768px) {
   .advantages__list {
@@ -385,13 +363,11 @@ img {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    gap: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
   .advantages__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     gap: 30px;
     -webkit-box-align: start;
         -ms-flex-align: start;
@@ -407,6 +383,7 @@ img {
   font-weight: 700;
   letter-spacing: 0.42px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .advantages__text {
@@ -418,6 +395,10 @@ img {
   display: block;
 }
 
+.advantages__item {
+  -ms-flex-preferred-size: calc((100% - 30px * (4 - 1)) / 4);
+      flex-basis: calc((100% - 30px * (4 - 1)) / 4);
+}
 .advantages__item::before {
   content: "";
   display: block;
@@ -450,7 +431,6 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .performance {
-    padding-top: 0px;
     padding-bottom: 94px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
