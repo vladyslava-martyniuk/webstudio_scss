@@ -2,83 +2,74 @@
   background-color: $add-color;
   padding-top: 94px;
   padding-bottom: 94px;
-  
-  
-   
 }
 
 .workers__list {
-@include flex(center);
-    gap: 30px;
+  @include flex(center);
+  gap: 30px;
+}
 
-      
-  }
+.workers__item {
+  background-color: $white-color;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
+}
 
-  .workers__item {
-    background-color: $white-color;
-    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
-      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-    border-radius: 0px 0px 4px 4px;
-  }
-  
-  .workers__wrapper {
-    padding-bottom: 30px;
-  }
-  
-  .workers__title {
-    margin-bottom: 50px;
-    @extend %title;
-  }
-  
-  .workers__subtitle {
-    margin-top: 30px;
-    margin-bottom: 10px;
-    color: $main-color;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 500;
-    letter-spacing: 0.48px;
-  }
-  
-  .workers__text {
-    color: $add-bg-color;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 400;
-    letter-spacing: 0.48px;
-  }
-  
-  .workers-soc-net.list{
-    @include flex( center);
-    margin-top: 28px;
-    gap: 12px;
-  }
-  
-  .workers-soc-net__link {
-    @include flex( center);
+.workers__wrapper {
+  padding-bottom: 30px;
+}
 
-    width: 44px;
-    height: 44px;
-    align-items: center;
-    border-radius: 50%;
-   transition-property: background-color;
-   transition-duration: 250ms  ;
-   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
-    &:hover,
-      &:focus {
-        background-color: $accent-color;
-      }
+.workers__title {
+  margin-bottom: 50px;
+  @extend %title;
+}
+
+.workers__subtitle {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: $main-color;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.48px;
+}
+
+.workers__text {
+  color: $add-bg-color;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.48px;
+}
+
+.workers-soc-net.list {
+  @include flex(center);
+  margin-top: 28px;
+  gap: 12px;
+}
+
+.workers-soc-net__link {
+  @include flex(center);
+
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  border-radius: 50%;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
   }
-  
- 
-  
- 
-  
-  .workers-soc-net__icon {
-    fill: #afb1b8;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-     .workers-soc-net__link:hover &,
+}
+
+.workers-soc-net__icon {
+  fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .workers-soc-net__link:hover &,
   .workers-soc-net__link:focus & {
     fill: $white-color;
   }
-  }
+}

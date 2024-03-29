@@ -1,27 +1,23 @@
 .advantages {
   padding-top: 60px;
   padding-bottom: 60px;
-@media screen and (min-width: 1200px) {
-  padding-top: 94px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
     padding-bottom: 94px;
   }
-
-  
 }
-  .advantages__list {
-    display: block;
+.advantages__list {
+  display: block;
   @media screen and (min-width: 768px) {
     display: flex;
-      flex-wrap: wrap;
-      gap: 30px;
-    }
-    @media screen and (min-width: 1200px) {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  @media screen and (min-width: 1200px) {
     gap: 30px;
     align-items: flex-start;
-    }
+  }
 }
-
-
 
 .advantages__subtitle {
   margin-bottom: 10px;
@@ -32,7 +28,7 @@
   letter-spacing: 0.42px;
   text-transform: uppercase;
   text-align: center;
-  }
+}
 .advantages__text {
   color: $main-color;
   font-size: 14px;
@@ -43,24 +39,21 @@
 }
 
 .advantages__item {
-@include flex-basis(30px, 4);
+  @include flex-basis(30px, 4);
   &::before {
     content: "";
     display: block;
     background-color: $add-color;
     height: 120px;
-   
+
     border-radius: 4px;
     background-image: url(../images/advantages_svg1.svg);
     background-repeat: no-repeat;
     background-position: center;
-    
   }
-     
 }
 @for $i from 1 through 4 {
   .advantages__item:nth-child(#{$i})::before {
-      background-image: url(../images/advantages_svg#{$i}.svg);
+    background-image: url(../images/advantages_svg#{$i}.svg);
   }
 }
-

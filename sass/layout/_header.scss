@@ -1,15 +1,13 @@
 .header {
   @include flex(space-around);
   align-items: center;
- padding-top: 16px;
- padding-bottom: 16px;
-  @media screen and (min-width:768px) {
-      padding-top: 0px;
-        padding-bottom: 0px;
-    }
-       
+  padding-top: 16px;
+  padding-bottom: 16px;
+  @media screen and (min-width: 768px) {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
 }
-
 
 .header__container {
   display: flex;
@@ -27,13 +25,9 @@
   display: none;
   gap: 50px;
   margin-right: auto;
-    @media screen and (min-width:768px) {
-      display: flex;
-      
-      
-    }
-  
-   
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .nav__link {
@@ -74,14 +68,13 @@
   display: none;
   gap: 50px;
   margin-left: auto;
-  @media screen and (min-width:768px) {
-      display: inline-block;
-    }
-  
-    @media screen and (min-width:1200px) {
-      display: flex;
-    }
-    
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .info-list__icon {
@@ -113,8 +106,6 @@
   display: inline-block;
   margin-left: 270px;
   @media screen and (min-width: 768px) {
-  display: none;
-}
-
- 
+    display: none;
+  }
 }
