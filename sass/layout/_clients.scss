@@ -1,6 +1,6 @@
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   @media screen and (min-width: 1200px) {
       padding-top: 94px;
       padding-bottom: 94px;
@@ -25,10 +25,13 @@
   
 }
 .clients__item{
-  @include flex-basis(20px, 3);
+  @include flex-basis(30px, 3);
   @media screen and (min-width: 768px) {
       @include flex-basis(30px, 2);
     }
+         @media screen and (min-width: 768px) {
+           @include flex-basis(30px, 4);
+         }
 }
 
 .clients__link {
