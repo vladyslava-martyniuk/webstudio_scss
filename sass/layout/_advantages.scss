@@ -27,7 +27,9 @@
   font-weight: 700;
   letter-spacing: 0.42px;
   text-transform: uppercase;
-  text-align: center;
+  @media screen and (min-width: 1200px) {
+      text-align: center;
+    }
 }
 .advantages__text {
   color: $main-color;
