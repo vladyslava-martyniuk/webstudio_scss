@@ -1,5 +1,4 @@
 .header {
-  
   padding-top: 16px;
   padding-bottom: 16px;
   @media screen and (min-width: 768px) {
@@ -20,6 +19,9 @@
   letter-spacing: 0.28px;
   margin-left: 93px;
   display: none;
+  @media screen and (min-width: 768px) {
+      display: flex;
+    }
 }
 
 .nav__list {
