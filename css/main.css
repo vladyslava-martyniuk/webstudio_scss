@@ -61,12 +61,10 @@
 }
 @media screen and (min-width: 1200px) {
   .footer__btn {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
     margin: 0;
-    display: flex;
-    gap: 10px;
   }
 }
 
