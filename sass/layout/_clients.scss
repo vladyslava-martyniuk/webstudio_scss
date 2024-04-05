@@ -11,14 +11,13 @@
   @extend %title;
   margin-bottom: 30px;
   font-size: 28px;
-  @media screen and (min-width: 1200px) {
     @media screen and (min-width:1200px) {
         font-size: 36px;
         margin-bottom: 50px;
       }
       
     }
-}
+
 
 .clients__list {
   @include flex(space-around);

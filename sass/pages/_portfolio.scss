@@ -1,12 +1,20 @@
 .projects {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
 }
 
 .filters__list {
   margin-bottom: 50px;
-  @include flex(center);
+  @include flex(flex-start);
   gap: 8px;
+  flex-wrap: wrap;
+  @media screen and (min-width: 768px) {
+      @include flex(center);
+    }
 }
 
 .filters__btn {
@@ -35,18 +43,24 @@
 }
 
 .projects__list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  @media screen and (min-width: 480px) {
-    display: block;
-    flex-direction: row;
+  display: block;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
   }
 }
 
 .projects__item {
-  @include flex-basis(20px, 3);
   border: 1px solid #eee;
+  margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    @include flex-basis(20px, 2);
+    
+    }
+         @media screen and (min-width: 1200px) {
+           @include flex-basis(20px, 3);
+         }
 }
 
 .projects__link {
