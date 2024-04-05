@@ -2,10 +2,7 @@
   background-color: $bg-color;
   padding-top: 60px;
   padding-bottom: 60px;
-  @media screen and (min-width: 1200px) {
-      padding-top: 94px;
-      padding-bottom: 94px;
-    }
+  
 }
 
 
@@ -13,6 +10,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 60px;
   @media screen and (min-width: 768px) {
       flex-direction: row;
       flex-wrap: wrap;
@@ -24,6 +22,13 @@
            gap: 70px;
          }
  
+}
+.address{
+  text-align: center;
+  font-style: normal;
+  @media screen and (min-width: 1200px) {
+      text-align: left;
+    }
 }
 .address__link {
   padding-bottom: 9px;
@@ -53,11 +58,10 @@
   letter-spacing: 0.42px;
   text-transform: uppercase;
   margin-bottom: 20px;
-  margin-top: 65px;
+ 
   text-align: center;
   @media screen and (min-width: 768px) {
-      margin-left: 333px;
-      margin-top: 5px;
+      row-gap: 60px;
     }
         @media screen and (min-width: 1200px) {
          text-align: left;
@@ -70,7 +74,7 @@
   display: flex;
   gap: 10px;
   @media screen and (min-width: 768px) {
-      margin-left: 333px;
+      row-gap: 60px;
     }
         @media screen and (min-width: 1200px) {
           margin-left: 0;
@@ -99,6 +103,7 @@
   flex-direction: column;
   @media screen and (min-width: 1200px) {
      display: flex;
+    flex-direction: row;
      gap: 12px;
     }
  
@@ -111,12 +116,11 @@
   font-weight: 700;
   line-height: 30px;
   letter-spacing: 0.96px;
-  padding-bottom: 20px;
-  padding-top: 60px;
+  margin-bottom: 20px;
   text-align: center;
   @media screen and (min-width: 1200px){
 text-align: left;
-margin-left: 93px;
+
   }
     }
 
@@ -142,6 +146,6 @@ margin-left: 93px;
   }
     @media screen and (min-width: 1200px) {
       width: 358px;
-      margin-left: 93px;
+     
     }
 }

@@ -15,6 +15,9 @@
   @media screen and (min-width: 768px) {
       @include flex(center);
     }
+        @media screen and (max-width:767px) {
+          width:326px;
+        }
 }
 
 .filters__btn {
@@ -55,11 +58,11 @@
   border: 1px solid #eee;
   margin-bottom: 30px;
   @media screen and (min-width: 768px) {
-    @include flex-basis(20px, 2);
+    @include flex-basis(30px, 2);
     
     }
          @media screen and (min-width: 1200px) {
-           @include flex-basis(20px, 3);
+           @include flex-basis(30px, 3);
          }
 }
 
