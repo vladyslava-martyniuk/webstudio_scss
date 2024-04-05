@@ -262,6 +262,10 @@ img {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.nav__link--current {
+  color: #2196f3;
+}
+
 .nav__link--current:hover::after,
 .nav__link--current:focus::after {
   opacity: 0.8;
