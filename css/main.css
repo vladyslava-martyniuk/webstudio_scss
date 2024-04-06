@@ -922,7 +922,6 @@ img {
 @media screen and (min-width: 1200px) {
   .footer-div__text {
     text-align: left;
-    font-size: 16px;
   }
 }
 
@@ -950,6 +949,7 @@ img {
 @media screen and (min-width: 1200px) {
   .footer__input {
     width: 358px;
+    margin-bottom: 0;
   }
 }
 
