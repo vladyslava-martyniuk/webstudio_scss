@@ -141,7 +141,25 @@
   gap: 5px;
   margin-top: 20px;
 }
-
+.modal__checkbox-custom{
+  width: 16px;
+  height: 15px;
+  border-radius: 2px;
+  border: 2px solid $main-color;
+  &:hover{
+    border-color: $accent-color;
+  }
+  .modal__checkbox-input:focus + &{
+    border-color: $accent-color;
+  }
+}
+.modal__checkbox-input:checked + .modal__checkbox-custom {
+  background-color: $accent-color;
+  background-image: url(../images/modal-check.svg);
+  background-repeat: no-repeat;
+  border-color: $accent-color;
+  background-position: center;
+}
 .modal__text-rules {
   padding-top: -5px;
 }
