@@ -325,14 +325,20 @@ img {
   color: #2196f3;
 }
 
-.btn-menu {
+.menu-btn-open {
   display: inline-block;
   margin-left: auto;
+  background-color: transparent;
+  border: transparent;
 }
 @media screen and (min-width: 768px) {
-  .btn-menu {
+  .menu-btn-open {
     display: none;
   }
+}
+
+.menu-container {
+  display: none;
 }
 
 .hero {
@@ -1147,6 +1153,50 @@ img {
 
 .modal__link {
   color: #2196f3;
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  background-color: #3f51b5;
+  z-index: 999;
+  -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: #fff;
+}
+
+.mobile-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.mobile-menu .link {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
 }
 
 .projects {

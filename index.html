@@ -27,11 +27,7 @@
           <a href="./index.html" class="logo">
             <span class="logo__accent">Web</span>Studio</a
           >
-          <a href="" class="btn-menu">
-            <svg width="40" height="40" class="menu__icon">
-              <use href="./images/symbol-defs.svg#icon-menu"></use>
-            </svg>
-          </a>
+          
           <nav class="nav">
             <ul class="list nav__list">
               <li class="nav__item">
@@ -68,6 +64,112 @@
                   ></use></svg>+380961111111</a>
             </li>
           </ul>
+          <button type="button" class="menu-btn-open js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <a href="#" class="btn-menu">
+              <svg width="40" height="40" class="menu__icon">
+                <use href="./images/symbol-defs.svg#icon-menu"></use>
+              </svg>
+            </a>
+          </button>
+          
+          <div class="menu-container js-menu-container" id="mobile-menu">
+          
+            <nav class="nav-mobile-menu" id="mobile-nav">
+              <ul class="list nav-mobile-menu__list">
+                <li class="nav-mobile-menu__item">
+                  <a href="./index.html" class="nav-mobile-menu__link link" id="menu-item-1" name="menu-item"><b>Студія</b></a>
+                </li>
+                <li class="nav-mobile-menu__item">
+                  <a href="./portfolio.html" class="nav-mobile-menu__link link" id="menu-item-2"
+                    name="menu-item"><b>Портфоліо</b></a>
+                </li>
+                <li class="nav-mobile-menu__item">
+                  <a href="./index.html" class="nav-mobile-menu__link link" id="menu-item-3" name="menu-item"><b>Контакти</b></a>
+                </li>
+              </ul>
+            </nav>
+          
+            <ul class="list info-mobile-menu-list">
+              <li class="info-mobile-menu-list__item">
+                <a href="mailto:info@devstudio.com" target="_blank" class="info-mobile-menu-list__link">info@devstudio.com</a>
+              </li>
+              <li class="info-mobile-menu-list__item">
+                <a href="tel:+380961111111" class="info-mobile-menu-list__link">+380961111111</a>
+              </li>
+            </ul>
+          
+            <ul class="soc-net-mobile-menu-list list">
+              <li class="soc-net-mobile-menu-list__item">
+                <a href="https://www.instagram.com/" class="soc-net-mobile-menu-list__link link">instagram</a>
+              </li>
+              <li class="soc-net-mobile-menu-list__item">
+                <a href="https://twitter.com/" class="soc-net-mobile-menu-list__link link">Twitter</a>
+              </li>
+              <li class="soc-net-mobile-menu-list__item">
+                <a href="https://www.facebook.com/" class="soc-net-mobile-menu-list__link link">Facebook</a>
+              </li>
+              <li class="soc-net-mobile-menu-list__item">
+                <a href="https://fi.linkedin.com/" class="soc-net-mobile-menu-list__link link">Linkedin</a>
+              </li>
+            </ul>
+          
+            <button type="button" class="menu-btn-close js-close-menu">
+              <a href="#" class="btn-menu">
+                <svg width="19" height="19" class="menu__icon-close">
+                  <use href="./images/symbol-defs.svg#icon-close"></use>
+                </svg>
+              </a>
+            </button>
+          
+          </div>
+          <div class="menu-container js-menu-container" id="mobile-menu">
+            <nav class="nav-mobile-menu" id="mobile-nav">
+              <ul class="list nav-mobile-menu__list">
+                <li class="nav-mobile-menu__item">
+                  <a href="./index.html" class="nav-mobile-menu__link link" id="menu-item-1" name="menu-item"><b>Студія</b></a>
+                </li>
+                <li class="nav-mobile-menu__item">
+                  <a href="./portfolio.html" class="nav-mobile-menu__link link" id="menu-item-2"
+                    name="menu-item"><b>Портфоліо</b></a>
+                </li>
+                <li class="nav-mobile-menu__item">
+                  <a href="./index.html" class="nav-mobile-menu__link link" id="menu-item-3" name="menu-item"><b>Контакти</b></a>
+                </li>
+              </ul>
+            </nav>
+          
+            <ul class="list info-mobile-menu-list">
+              <li class="info-mobile-menu-list__item">
+                <a href="mailto:info@devstudio.com" target="_blank" class="info-mobile-menu-list__link">info@devstudio.com</a>
+              </li>
+              <li class="info-mobile-menu-list__item">
+                <a href="tel:+380961111111" class="info-mobile-menu-list__link">+380961111111</a>
+              </li>
+            </ul>
+          
+            <ul class="soc-net-mobile-menu-list list">
+              <li class="soc-net-mobile-menu-list__item">
+                <a href="https://www.instagram.com/" class="soc-net-mobile-menu-list__link link">instagram</a>
+              </li>
+              <li class="soc-net-mobile-menu-list__item">
+                <a href="https://twitter.com/" class="soc-net-mobile-menu-list__link link">Twitter</a>
+              </li>
+              <li class="soc-net-mobile-menu-list__item">
+                <a href="https://www.facebook.com/" class="soc-net-mobile-menu-list__link link">Facebook</a>
+              </li>
+              <li class="soc-net-mobile-menu-list__item">
+                <a href="https://fi.linkedin.com/" class="soc-net-mobile-menu-list__link link">Linkedin</a>
+              </li>
+            </ul>
+          
+            <button type="button" class="menu-btn-close js-close-menu">
+              <a href="#" class="btn-menu">
+                <svg width="19" height="19" class="menu__icon-close">
+                  <use href="./images/symbol-defs.svg#icon-close"></use>
+                </svg>
+              </a>
+            </button>
+          </div>
 
       </div>
     </header>
@@ -524,7 +626,8 @@
           <button type="submit" class="modal__btn btn">Відправити</button>
         </form>
       </div>
-    </div>
+    </div> </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
