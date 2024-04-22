@@ -111,18 +111,5 @@ margin-left: auto;
     color: $accent-color;
   }
 }
-.menu-btn-open {
-  display: inline-block;
-  margin-left: auto;
-  background-color: transparent;
-  border: transparent;
 
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-}
-.menu-container {
-  display: none;
 
-  
-}

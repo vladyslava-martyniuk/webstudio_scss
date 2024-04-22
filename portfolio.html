@@ -42,34 +42,42 @@
               <use href="./images/symbol-defs.svg#icon-smartphone"></use>
             </svg>+380961111111</a></li>
       </ul>
-      <div class="menu-container">
-        <button type="button" class="menu-btn-open js-open-menu" >
-          <a href="" class="btn-menu">
-            <svg width="40" height="40" class=" menu__icon">
-              <use href="./images/symbol-defs.svg#icon-menu"></use>
-            </svg>
-          </a>
-        </button>
-        <nav class="nav-mobile-menu">
+      <button type="button" class="menu-btn-open js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <a href="#" class="btn-menu">
+          <svg width="40" height="40" class="menu__icon">
+            <use href="./images/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </a>
+      </button>
+      
+      </div>
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <nav class="nav-mobile-menu" id="mobile-nav">
           <ul class="list nav-mobile-menu__list">
             <li class="nav-mobile-menu__item">
-              <a href="./index.html" class="nav-mobile-menu__link link"><b>Студія</b></a>
+              <a href="./index.html" class="nav-mobile-menu__link link" id="menu-item-1" name="menu-item"><b>Студія</b></a>
             </li>
             <li class="nav-mobile-menu__item">
-              <a href="./portfolio.html" class=" nav-mobile-menu__link link "><b>Портфоліо</b></a>
+              <a href="./portfolio.html" class="nav-mobile-menu__link link" id="menu-item-2"
+                name="menu-item"><b>Портфоліо</b></a>
             </li>
             <li class="nav-mobile-menu__item">
-              <a href="./index.html" class="nav-mobile-menu__ link link"> <b>Контакти</b></a>
+              <a href="./index.html" class="nav-mobile-menu__link link" id="menu-item-3" name="menu-item"><b>Контакти</b></a>
             </li>
           </ul>
         </nav>
-        <ul class=" list info-mobile-menu-list">
-          <li class="info-mobile-menu-list__item"> <a href="mailto:info@devstudio.com" target="_blank" class="info-mobile-menu-list__link">info@devstudio.com</a> </li>
-          <li class="info-mobile-menu-list__item"><a href="tel:+380961111111" class="info-mobile-menu-list__link">
-             +380961111111</a></li>
+      
+        <ul class="list info-mobile-menu-list">
+          <li class="info-mobile-menu-list__item">
+            <a href="mailto:info@devstudio.com" target="_blank" class="info-mobile-menu-list__link">info@devstudio.com</a>
+          </li>
+          <li class="info-mobile-menu-list__item">
+            <a href="tel:+380961111111" class="info-mobile-menu-list__link">+380961111111</a>
+          </li>
         </ul>
+      
         <ul class="soc-net-mobile-menu-list list">
-          <li class="soc-net-mobile-menu-list__item" >
+          <li class="soc-net-mobile-menu-list__item">
             <a href="https://www.instagram.com/" class="soc-net-mobile-menu-list__link link">instagram</a>
           </li>
           <li class="soc-net-mobile-menu-list__item">
@@ -82,14 +90,16 @@
             <a href="https://fi.linkedin.com/" class="soc-net-mobile-menu-list__link link">Linkedin</a>
           </li>
         </ul>
+      
         <button type="button" class="menu-btn-close js-close-menu">
-          <a href="" class="btn-menu">
-            <svg width="19" height="19" class=" menu__icon-close">
+          <a href="#" class="btn-menu">
+            <svg width="13" height="13" class="menu__icon-close">
               <use href="./images/symbol-defs.svg#icon-close"></use>
             </svg>
           </a>
+        </button>
+        </div>
       </div>
-    </div>
   </header>
   <main class="main">
     <section class="projects">
