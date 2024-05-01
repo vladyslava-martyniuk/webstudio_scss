@@ -15,65 +15,76 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    padding: 32px;
+    padding: 48px 83px 48px 40px ;
     background-color: $white-color;
     z-index: 999;
-display: none;
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
+    display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 }
 
 .menu-container.is-open {
     transform: translateX(0);
-    display: block;
+   
 }
 .nav-mobile-menu__list{
     margin-bottom: 32px;
+}
+.nav-mobile-menu__item:not(:last-child) {
+    margin-bottom: 32px;
+}
+.nav-mobile-menu__link--carrent {
+    color: $accent-color;
+    /* Встановлюємо акцентний колір для посилання на поточній сторінці */
 }
 .nav-mobile-menu__link{
     color: $main-color;
         font-weight: 500;
         letter-spacing: 0.28;
-        font-size: 14px;
+        font-size: 40px;
         text-decoration: none;
         justify-content: start;
         display: block;
         position: relative;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        &:first-child {
-                padding-bottom: 32px;
-            }
+        
 }
-.menu-btn-close{
-border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50px;
-    background-color: transparent;
-    @include flex(center);
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    align-items: center;
-    padding: 6px 6px 6px 6px;
+.nav-mobile-menu__link--carrent {
+    color: $accent-color;
+    
 }
-.info-mobile-menu-list__link{
+.info-mobile-menu-list{
+    margin-bottom: 64px;
+
+}
+.info-mobile-menu-list__item:not(:last-child){
+    margin-bottom: 32px;
+
+}
+.info-mobile-menu-list__link {
     color: $add-bg-color;
-        font-size: 14px;
-        font-weight: 500;
-        letter-spacing: 0.28px;
-        text-decoration: none;
-        display: flex;
-        align-items: center;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        &:first-child{
-            padding-bottom: 32px;
-        }
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    &:first-child{
+        color: $accent-color;
+        font-size: 36px;
+    }
 }
+
+
+
 .soc-net-mobile-menu-list{
     display: flex;
     gap: 10px;
 }
 .soc-net-mobile-menu-list__item{
-   width: 90px;
+   padding-right: 10px;
     border-right: 1px solid $add-bg-color; 
     &:last-child{
         border-right: none;
@@ -86,4 +97,25 @@ border: 1px solid rgba(0, 0, 0, 0.1);
         letter-spacing: 0.02em;
         color: $accent-color;
         text-align: center;
+}
+.menu-btn-close {
+   border-color: transparent;
+    border-radius: 50px;
+    background-color: transparent;
+    @include flex(center);
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    align-items: center;
+}
+.menu-btn-close:hover {
+    color: $accent-color;
+
+}
+.btn-menu:hover .menu__icon-close  {
+    fill: $accent-color;
+    
+}
+.menu__icon-close{
+    fill: $main-color;
 }
