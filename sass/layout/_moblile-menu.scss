@@ -71,7 +71,7 @@
     text-decoration: none;
     display: flex;
     align-items: center;
-    &:first-child{
+    .info-mobile-menu-list__item:first-child &{
         color: $accent-color;
         font-size: 36px;
     }
@@ -108,11 +108,8 @@
     right: 8px;
     align-items: center;
 }
-.menu-btn-close:hover {
-    color: $accent-color;
 
-}
-.btn-menu:hover .menu__icon-close  {
+.menu-btn-close:hover .menu__icon-close  {
     fill: $accent-color;
     
 }
