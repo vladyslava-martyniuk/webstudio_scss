@@ -1287,6 +1287,11 @@ img {
   color: #2196f3;
   text-align: center;
 }
+@media screen and (min-width: 480px) {
+  .soc-net-mobile-menu-list__link {
+    font-size: 18px;
+  }
+}
 
 .menu-btn-close {
   border-color: transparent;
